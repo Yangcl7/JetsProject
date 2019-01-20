@@ -4,15 +4,16 @@ public abstract class Jet {
 	private String model;
 	private int speedInMph;
 	private int range;
-	private int price;
+	private long price;
 	
-	public Jet(String model, int speedInMph, int range, int price) {
+	public Jet(String model, int speedInMph, int range, long price) {
 		
 		this.model = model;
 		this.speedInMph = speedInMph;
 		this.range = range;
 		this.price = price;
 	}
+
 
 	public String getModel() {
 		return model;
@@ -38,7 +39,7 @@ public abstract class Jet {
 		this.range = range;
 	}
 
-	public int price() {
+	public long price() {
 		return price;
 	}
 
@@ -56,8 +57,10 @@ public abstract class Jet {
 		System.out.println("");
 		
 	}
-	public void Listfleet() {
-		
+	public String Listfleet() {
+		return "Jets [Model" + model + ", SpeedInMph " + speedInMph + ", Range " + range + ", Price " + price + "]";
 	}
+
+	protected abstract String Flyalljets(Object fly);
 
 }
