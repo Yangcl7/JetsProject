@@ -18,10 +18,15 @@ public class JetField {
 		jets[3] = BO787;
 		jets[4] = A380;
 	}
-	public void airField(int i) {
-		for(int i1 = 0; i1 < jets.length; i1++);
-			if(jets[i] != null) {
-				System.out.println("Print" + jets[0]);
+
+	public void airField() {
+		for(Jet jet : jets);
+			if(jets !=null) {
+				System.out.println("Jet model is: " + jets.getModel() + "Max speed(MPH): " + jets.getSpeed()
+                + "Max range(Miles): " + jets.getRange() + " Price/Unit cost is: " + jets.getPrice());
+				}
+			else{
+				break;
 			}
 	}
 

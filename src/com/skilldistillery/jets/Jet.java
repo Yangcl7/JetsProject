@@ -2,12 +2,11 @@ package com.skilldistillery.jets;
 
 public abstract class Jet {
 	private String model;
-	private int speedInMph;
-	private int range;
+	private int speedInMph, range;
 	private long price;
 	
+	
 	public Jet(String model, int speedInMph, int range, long price) {
-		
 		this.model = model;
 		this.speedInMph = speedInMph;
 		this.range = range;
@@ -43,8 +42,8 @@ public abstract class Jet {
 		return price;
 	}
 
-	public void price(int price) {
-		this.price = price;
+	public void price(long price2) {
+		this.price = price2;
 	}
 	public void fly() {
 		System.out.println("Standby for take off... ready all, 3, 2, 1, TAKE OFF!!!");

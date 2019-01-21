@@ -1,4 +1,5 @@
 package com.skilldistillery.jets;
+
 import java.util.Scanner;
 
 public class JetsApplication {
@@ -43,6 +44,7 @@ public class JetsApplication {
 		System.out.println("QUIT");
 		break;
 	}
+	input.close();
 
 	 }
 	private static void listFleet() {
@@ -65,6 +67,4 @@ public class JetsApplication {
 	private static void addNewJet() {
 		
 	}
-
 }
-
