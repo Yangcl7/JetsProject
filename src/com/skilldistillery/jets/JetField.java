@@ -21,9 +21,10 @@ public class JetField {
 
 	public void listFleet() {
 		System.out.println("Display list of fleet");
+		System.out.println();
 		for (int i = 0; i < jets.length; i++) {
 			if (jets[i] != null) {
-				System.out.println(jets[i].getModel());
+				System.out.println(jets[i].getModel() + " " + jets[i].getSpeedInMph() + " " + jets[i].getRange() + " " + jets[i].price());
 			} else {
 				break;
 			}
@@ -76,7 +77,24 @@ public class JetField {
 	}
 
 	public void addJet() {
-		
+		Scanner kb = new Scanner(System.in);
+		System.out.println("What's the model? ");
+		String model = kb.nextLine();
+		System.out.println("What's the speed?");
+		int speed = kb.nextInt();
+		System.out.println("What's the range?");
+		int range = kb.nextInt();
+		System.out.println("What's the price?");
+		long price = kb.nextLong();
+		Jet jet = new JetLmpl(model, speed, range, price);
+		for (int i = 0; i < jets.length; i++) {
+			if(jets[i] == null) {
+				jets[i] = jet;
+				System.out.println("Add a jet " + jet);
+				break;
+			}
+			
+		}
 
 	}
 
