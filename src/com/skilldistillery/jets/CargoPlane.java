@@ -8,14 +8,14 @@ public class CargoPlane extends Jet implements CargoCarrier {
 
 	@Override
 	public void loadCargo() {
-		System.out.println(this.getModel() + "Loading cargo");
 		
 	}
+		
 
 	@Override
 	protected String Flyalljets(Object fly) {
+		// TODO Auto-generated method stub
 		return null;
 	}
-	
 
 }

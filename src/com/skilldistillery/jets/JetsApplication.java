@@ -10,6 +10,7 @@ public class JetsApplication {
 
 		boolean menu = true;
 		while (menu) {
+			System.out.println("");
 			System.out.println("Welcome, please choose an option below");
 			System.out.println("______________________________________");
 			System.out.println("1: List fleet");
@@ -23,6 +24,7 @@ public class JetsApplication {
 
 			int menuList = input.nextInt();
 			if(menuList == 8) {
+				System.out.println("Thank you for choosing SD19 Air Space");
 				break;
 			}
 
@@ -55,8 +57,24 @@ public class JetsApplication {
 				System.out.println("Invalid option");
 				
 			}
+			
 		}
 		input.close();
+	}
+public void viewFastestJet() {
+		
+	}
+	public void viewLongestRange() {
+	}
+
+	public void loadAllCargoJets() {
+	}
+
+	public void dogFight() {
+	}
+
+	public void addJet() {
+
 	}
 
 }
