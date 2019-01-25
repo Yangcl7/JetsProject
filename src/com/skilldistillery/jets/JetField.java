@@ -6,15 +6,11 @@ public class JetField {
 	Jet[] jets = new Jet[10];
 
 	public void fly() {
-		System.out.println("Standby for take off... ready all, 3, 2, 1, TAKE OFF!!!");
-		System.out.println("");
-		System.out.println("");
-		System.out.println("      --     \\              --       \\ ");
-		System.out.println("      |\\_____\\_______      |\\_______\\_____ ");
-		System.out.println("     {|ZZZZZZZZZZZZZZZZ>    {|ZZZZZZZZZZZZZZZZ>");
-		System.out.println("             O      o               O       o");
-		System.out.println("");
+		
 		for (int i = 0; i < jets.length; i++) {
+			if(jets[i] != null) {
+				jets[i].fly();
+			}
 		}
 
 	}
@@ -63,17 +59,23 @@ public class JetField {
 	}
 
 	public void loadAllCargoJets() {
-		System.out.println("Loading cargo 10%.....25%...60%...100%..Loading complete.");
-		System.out.println("       ___  ");
-		System.out.println("         \\");
-		System.out.println(" --   --  \\______");
-		System.out.println("|__| |__| ________}");
-		System.out.println("");
+		for (int i = 0; i < jets.length; i++) {
+			if(jets[i] != null && jets[i] instanceof CargoPlane) {
+				CargoPlane newCargoPlane = (CargoPlane) jets[i];
+				newCargoPlane.loadCargo();
+			}
+		}
+		
 	}
 
 
 	public void dogFight() {
-		System.out.println("Combat plane READY and LOADED, take off and shoot lasers!!!");
+		for (int i = 0; i < jets.length; i++) {
+			if(jets[i] != null && jets[i] instanceof FighterJet) {
+				FighterJet newFighterJet = (FighterJet) jets[i];
+				newFighterJet.combat(newFighterJet);
+			}
+		}
 	}
 
 	public void addJet() {

@@ -53,7 +53,14 @@ public abstract class Jet {
 		this.price = price;
 	}
 	public void fly() {
-		
+		System.out.println("Standby for take off... " +getModel()+ " ready all, 3, 2, 1, TAKE OFF!!!");
+		System.out.println("");
+		System.out.println("");
+		System.out.println("      --     \\              --       \\ ");
+		System.out.println("      |\\_____\\_______      |\\_______\\_____ ");
+		System.out.println("     {|ZZZZZZZZZZZZZZZZ>    {|ZZZZZZZZZZZZZZZZ>");
+		System.out.println("             O      o               O       o");
+		System.out.println("");
 		
 	}
 	public String Listfleet() {
