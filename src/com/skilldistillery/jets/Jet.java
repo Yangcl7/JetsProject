@@ -15,7 +15,7 @@ public abstract class Jet {
 		this.price = price;
 		
 	}
-	public String output () {
+	public String toString () {
 		String output = "Model: " + model + ", Speed: " + speedInMph + ", Range: " + range + ", Price: " + price;
 		return output;
 	}
@@ -63,15 +63,10 @@ public abstract class Jet {
 		System.out.println("");
 		
 	}
-	public String Listfleet() {
-		return "Jets [Model" + model + ", SpeedInMph " + speedInMph + ", Range " + range + ", Price " + price + "]";
-	}
 	public double getSpeedInMach() {
 		return 0;
 		
 	}
 	
-
-	protected abstract String Flyalljets(Object fly);
 
 }

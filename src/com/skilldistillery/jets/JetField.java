@@ -73,7 +73,7 @@ public class JetField {
 		for (int i = 0; i < jets.length; i++) {
 			if(jets[i] != null && jets[i] instanceof FighterJet) {
 				FighterJet newFighterJet = (FighterJet) jets[i];
-				newFighterJet.combat(newFighterJet);
+				newFighterJet.combat();
 			}
 		}
 	}

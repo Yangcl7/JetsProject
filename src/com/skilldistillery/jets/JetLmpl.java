@@ -7,10 +7,5 @@ public class JetLmpl extends Jet {
 		// TODO Auto-generated constructor stub
 	}
 
-	@Override
-	protected String Flyalljets(Object fly) {
-		// TODO Auto-generated method stub
-		return null;
-	}
 
 }

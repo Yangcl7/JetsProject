@@ -16,12 +16,6 @@ public class CargoPlane extends Jet implements CargoCarrier {
 		System.out.println("");
 		
 	}
-		
 
-	@Override
-	protected String Flyalljets(Object fly) {
-		// TODO Auto-generated method stub
-		return null;
-	}
 
 }
